@@ -21,8 +21,8 @@ class App {
     }
 
     corsInit(app: express.Application): void {
-        const corsRequester = CorsConfig.handler(['http://localhost', 'http://127.0.0.1'])
-
+        const corsRequester = CorsConfig.handler(['*'])
+    
         app.use(corsRequester)
         app.use(express.json())
     }

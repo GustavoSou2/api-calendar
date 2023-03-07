@@ -6,4 +6,5 @@ export default interface IUserDTO extends IDefaultDTO {
     phone: string;
     email: string;
     password: string;
+    isConfirmed: boolean;
 }
